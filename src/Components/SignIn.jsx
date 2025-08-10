@@ -11,7 +11,6 @@ import { AuthContext } from './Provider/AuthProvider';
 
 const SignIn = () => {
 
-    const photoURL = "https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png";
 
     const blackLogo = 'https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png';
     const whiteLogo = 'https://i.postimg.cc/0yDJrn8Z/Eventure-footer-logo.png';

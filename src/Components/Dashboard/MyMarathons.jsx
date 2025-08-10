@@ -51,7 +51,7 @@ const MyMarathons = () => {
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
-                        <thead>
+                        <thead className='dark:text-gray-200'>
                             <tr>
                                 <th></th>
                                 <th>Marathon Name</th>

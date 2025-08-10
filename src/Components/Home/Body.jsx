@@ -4,6 +4,7 @@ import { Link, useLoaderData } from 'react-router';
 import UpcomingEvent from './UpcomingEvent';
 import { Helmet } from 'react-helmet-async';
 import { AuthContext } from '../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Body = () => {
 
@@ -163,6 +164,15 @@ const EventFAQSection = () => {
 
     const {darkMode} = use(AuthContext) ;
 
+    const handleSend = ()=>{
+
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success"
+      });
+    }
+
     const blackLogo = 'https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png';
     const whiteLogo = 'https://i.postimg.cc/0yDJrn8Z/Eventure-footer-logo.png';
 
@@ -179,7 +189,7 @@ const EventFAQSection = () => {
             />
           </div>
           <div className="description text-center lg:text-left">
-            <h2 className="font-bold lg:font-semibold text-xl lg:text-3xl text-accentcolor lg:text-black">
+            <h2 className="font-bold lg:font-semibold text-xl lg:text-3xl text-accentcolor lg:text-black dark:text-gray-200">
               Give Feedback !
             </h2>
             <p className="text-base lg:text-lg my-4">
@@ -198,7 +208,7 @@ const EventFAQSection = () => {
             />
             </div>
             
-              <button className="btn btn-outline mt-3 rounded-lg ">
+              <button onClick={handleSend} className="btn btn-outline mt-3 rounded-lg ">
                 Send
               </button>
          

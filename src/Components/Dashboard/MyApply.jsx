@@ -45,12 +45,12 @@ const MyApply = () => {
                 <p className='text-center text-2xl font-bold my-3'>My Apply</p>
 
                 <div className='text-center my-5'>
-                    <input type="text" placeholder="Search By Title" className="input " onChange={(e) => setSearch(e.target.value)} />
+                    <input type="text" placeholder="Search By Title" className="input dark:bg-gray-900" onChange={(e) => setSearch(e.target.value)} />
                 </div>
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
-                        <thead>
+                        <thead className='dark:text-gray-200'>
                             <tr>
                                 <th></th>
                                 <th>Marathon Name</th>

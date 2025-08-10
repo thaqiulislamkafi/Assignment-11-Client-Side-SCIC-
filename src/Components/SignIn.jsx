@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { use } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { SiGithub } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
@@ -7,10 +7,16 @@ import { auth } from './Firebase/authentication';
 import Swal from 'sweetalert2';
 import { RxCross1 } from "react-icons/rx";
 import { Link, useLocation, useNavigate } from 'react-router';
+import { AuthContext } from './Provider/AuthProvider';
 
 const SignIn = () => {
 
     const photoURL = "https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png";
+
+    const blackLogo = 'https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png';
+    const whiteLogo = 'https://i.postimg.cc/0yDJrn8Z/Eventure-footer-logo.png';
+
+    const {darkMode} = use(AuthContext) ;
 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
@@ -80,7 +86,7 @@ const SignIn = () => {
             <div className='flex flex-col lg:flex-row items-center justify-between sora-font w-[85.94vw] mx-auto min-h-screen px-4 my-20'>
                 <div className='lg:w-3/6 text-center my-12'>
                     <div className='logo flex items-center gap-1 justify-center lg:justify-start'>
-                        <img className='w-12 lg:w-25' src={photoURL} alt="" />
+                        <img className='w-12 lg:w-25' src={darkMode? whiteLogo : blackLogo} alt="" />
                         <p className='text-4xl lg:text-6xl poppins'>
                             <span className='font-bold'>Eventure</span>
                         </p>

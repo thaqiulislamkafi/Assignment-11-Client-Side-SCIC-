@@ -11,6 +11,7 @@ const Navbar = () => {
     console.log(user)
 
     const blackLogo = 'https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png';
+    const whiteLogo = 'https://i.postimg.cc/0yDJrn8Z/Eventure-footer-logo.png';
 
     const handleSignOut = () => {
 
@@ -54,7 +55,7 @@ const Navbar = () => {
                     </div>
 
                     <div className='logo flex items-center gap-1  mx-0'>
-                        <img className='w-7' src={blackLogo} alt="" />
+                        <img className='w-7' src={darkMode ? whiteLogo : blackLogo} alt="" />
                         <p className='text-xl poppins'>
                             <span className='font-bold'>Eventure</span>
                         </p>
@@ -68,10 +69,8 @@ const Navbar = () => {
                         <ul className="Nav-mid  menu-horizontal px-1">
                             <li><NavLink to={'/'}>Home</NavLink></li>
                             <li><NavLink to={'/marathons'}>Marathons</NavLink> </li>
-                            {
-                                user && 
-                                <li><NavLink to={'/dashboard/myMarathons'}>Dashboard</NavLink></li>
-                            }
+                            <li><NavLink to={'/dashboard/myMarathons'}>Dashboard</NavLink></li>
+                          
                            
                         </ul>
                     </div>

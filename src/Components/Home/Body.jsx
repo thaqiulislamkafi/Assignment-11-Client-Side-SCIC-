@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
 import Banner from './Banner';
 import { Link, useLoaderData } from 'react-router';
 import UpcomingEvent from './UpcomingEvent';
 import { Helmet } from 'react-helmet-async';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Body = () => {
 
@@ -159,6 +160,12 @@ const EventFAQSection = () => {
   };
 
   const NewsletterSubscribe = () => {
+
+    const {darkMode} = use(AuthContext) ;
+
+    const blackLogo = 'https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png';
+    const whiteLogo = 'https://i.postimg.cc/0yDJrn8Z/Eventure-footer-logo.png';
+
     return (
       <section className="">
         <div
@@ -167,7 +174,7 @@ const EventFAQSection = () => {
           <div className="image">
             <img
               className="w-[220px] lg:w-[330px] h-auto"
-              src="https://i.postimg.cc/rprF9z6y/vecteezy-letter-e-elegant-golden-ratio-modern-monogram-logo-22188510.png"
+              src={darkMode ? whiteLogo : blackLogo}
               alt="Vegetable basket"
             />
           </div>

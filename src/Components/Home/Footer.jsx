@@ -11,7 +11,7 @@ const Footer = () => {
     const whiteLogo = 'https://i.postimg.cc/0yDJrn8Z/Eventure-footer-logo.png';
 
     return (
-        <div className='bg-gray-900'>
+        <div className='bg-gray-900 dark:bg-gray-800'>
             <div className=' w-[85.94vw] mx-auto py-24 flex flex-col justify-center text-start md:items-center'>
                 <div className='text-2xl poppins flex items-center gap-4 text-white my-2 mt-50'>
                     <div><img className='w-12 h-auto' src={whiteLogo} alt="" /></div>

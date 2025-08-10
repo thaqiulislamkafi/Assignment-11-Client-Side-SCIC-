@@ -46,30 +46,30 @@ const UpdateMarathon = ({ marathon,setMarathon }) => {
 
     return (
         <div>
-            <div className='my-10 lg:mx-10'>
+            <div className='my-10 lg:mx-10 '>
                 <p className='text-center font-bold text-2xl'>Update Marathon</p>
 
                 <form onSubmit={handleUpdateMarathon} className="fieldset  border-base-300 rounded-box  border p-4 gird grid-cols-1 lg:grid-cols-2 gap-5 my-10">
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Event Name</label>
-                        <input type="text" defaultValue={marathon.name} name='name' className="input w-full" placeholder="Enter Event Name" />
+                        <input type="text" defaultValue={marathon.name} name='name' className="input w-full dark:bg-gray-900" placeholder="Enter Event Name" />
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Location</label>
-                        <input type="text" name='location' className="input  w-full" defaultValue={marathon.location} placeholder="Enter event Location" />
+                        <input type="text" name='location' className="input dark:bg-gray-900 w-full" defaultValue={marathon.location} placeholder="Enter event Location" />
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Registration Deadline</label>
 
-                        <DatePicker name='deadline_date' className='input w-full' selected={regiEnd} onChange={(regiEnd) => setRegiEnd(regiEnd)}></DatePicker>
+                        <DatePicker name='deadline_date' className='input w-full dark:bg-gray-900' selected={regiEnd} onChange={(regiEnd) => setRegiEnd(regiEnd)}></DatePicker>
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Select Category </label>
-                        <select defaultValue="Pick a color" className="select w-full" name='category'>
+                        <select defaultValue="Pick a color" className="select w-full dark:bg-gray-900" name='category'>
                             <option disabled={true}>Pick a Category</option>
                             <option>Art</option>
                             <option>Environment</option>
@@ -80,18 +80,18 @@ const UpdateMarathon = ({ marathon,setMarathon }) => {
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Registration Start Date</label>
-                        <DatePicker name='start_date' className='input w-full' selected={regiStart} ></DatePicker>
+                        <DatePicker name='start_date' className='input w-full dark:bg-gray-900' selected={regiStart} ></DatePicker>
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Event Start</label>
 
-                        <DatePicker name='event_start' className='input w-full' selected={eventStart} onChange={(eventStart) => setEventStart(eventStart)}></DatePicker>
+                        <DatePicker name='event_start' className='input w-full dark:bg-gray-900' selected={eventStart} onChange={(eventStart) => setEventStart(eventStart)}></DatePicker>
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Set Running Distance </label>
-                        <select defaultValue="Pick a color" className="select w-full" name='running_distance'>
+                        <select defaultValue="Pick a color" className="select w-full dark:bg-gray-900" name='running_distance'>
                             <option disabled={true}>Pick one</option>
                             <option>3k</option>
                             <option>10k</option>
@@ -101,25 +101,25 @@ const UpdateMarathon = ({ marathon,setMarathon }) => {
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Details</label>
-                        <input type="text" name='details' className="input  w-full" placeholder="Enter event Details" defaultValue={marathon.details} />
+                        <input type="text" name='details' className="input dark:bg-gray-900 w-full" placeholder="Enter event Details" defaultValue={marathon.details} />
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Registration Created</label>
-                        <DatePicker name='event_created' className='input w-full' selected={regiStart} ></DatePicker>
+                        <DatePicker name='event_created' className='input w-full dark:bg-gray-900' selected={regiStart} ></DatePicker>
                     </div>
 
                     <div className='flex flex-col gap-2'>
                         <label className="label">Event User</label>
-                        <input type="text" name='event_user' className="input  w-full" defaultValue={user.email} placeholder="Enter User email" />
+                        <input type="text" name='event_user' className="input dark:bg-gray-900 w-full" defaultValue={user.email} placeholder="Enter User email" />
                     </div>
 
                     <div className='flex flex-col gap-2 lg:col-span-2'>
                         <label className="label">Event Thumbnail</label>
-                        <input type="text" name='thumbnail' className="input w-full " defaultValue={marathon.thumbnail} placeholder="Enter Event Thumbnail" />
+                        <input type="text" name='thumbnail' className="input w-full dark:bg-gray-900" defaultValue={marathon.thumbnail} placeholder="Enter Event Thumbnail" />
                     </div>
 
-                    <button className='w-full btn lg:col-span-2'>Submit</button>
+                    <button className='w-full btn lg:col-span-2 dark:bg-gray-800 dark:text-gray-200'>Submit</button>
                 </form>
             </div>
         </div>

@@ -77,7 +77,7 @@ const EventFAQSection = () => {
         <p className="text-2xl font-semibold lg:text-3xl text-accentcolor mb-8">
           Frequently Asked Questions
         </p>
-        <div className="asked bg-base-200 rounded-2xl lg:px-14 lg:py-20">
+        <div className="asked bg-base-200 dark:bg-gray-900 dark:border dark:border-gray-700 rounded-2xl lg:px-14 lg:py-20">
           <div className="asked-container flex gap-6 flex-col p-3 lg:p-0 lg:flex-row lg:justify-between ">
             <div className="asked-title p-5 lg:ml-6">
               <img
@@ -88,7 +88,7 @@ const EventFAQSection = () => {
             </div>
             <div className="asked-accordion space-y-2 lg:space-y-5 lg:max-w-[600px] ">
               {/* FAQ Item 1 */}
-              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100">
+              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100 dark:bg-gray-900 dark:border-gray-700">
                 <input type="radio" name="my-accordion-2" defaultChecked />
                 <div className="collapse-title text-sm lg:text-lg font-medium">
                   How do I track local events in my area?
@@ -101,7 +101,7 @@ const EventFAQSection = () => {
               </div>
   
               {/* FAQ Item 2 */}
-              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100">
+              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100 dark:bg-gray-900 dark:border-gray-700">
                 <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-sm lg:text-lg font-medium">
                   Can I submit my own event to be tracked?
@@ -114,7 +114,7 @@ const EventFAQSection = () => {
               </div>
   
               {/* FAQ Item 3 */}
-              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100">
+              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100 dark:bg-gray-900 dark:border-gray-700">
                 <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-sm lg:text-lg font-medium">
                   How often is event information updated?
@@ -127,7 +127,7 @@ const EventFAQSection = () => {
               </div>
   
               {/* FAQ Item 4 */}
-              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100">
+              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100 dark:bg-gray-900 dark:border-gray-700">
                 <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-sm lg:text-lg font-medium">
                   Is there a mobile app for event tracking?
@@ -140,7 +140,7 @@ const EventFAQSection = () => {
               </div>
   
               {/* FAQ Item 5 */}
-              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100">
+              <div className="collapse collapse-arrow bg-base-100 border-2 border-gray-100 dark:bg-gray-900 dark:border-gray-700">
                 <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-sm lg:text-lg font-medium">
                   How do I get notifications for new events?
@@ -162,7 +162,7 @@ const EventFAQSection = () => {
     return (
       <section className="">
         <div
-          className="z-40 mailbox w-[85.94vw] mx-auto bg-gray-200 rounded-3xl px-7 py-10 lg:py-12 lg:px-20 flex flex-col lg:flex-row gap-5 justify-between items-center lg:-mb-48 -mb-64 relative sora-font"
+          className="z-40 mailbox w-[85.94vw] mx-auto bg-gray-200 rounded-3xl px-7 py-10 lg:py-12 lg:px-20 flex flex-col lg:flex-row gap-5 justify-between items-center lg:-mb-48 -mb-64 relative sora-font dark:bg-gray-900 dark:border dark:border-gray-700"
         >
           <div className="image">
             <img
@@ -181,13 +181,13 @@ const EventFAQSection = () => {
             <input
               type="text"
               placeholder="Enter Email"
-              className="input input-ghost w-full max-w-xs bg-white"
+              className="input dark:bg-gray-900  w-full max-w-xs bg-white"
             />
             <div className='my-3'>
             <textarea
               type="text"
               placeholder=""
-              className="input input-ghost w-full max-w-xs bg-white"
+              className="input dark:bg-gray-900  w-full max-w-xs bg-white"
             />
             </div>
             <div className="btn mt-3">

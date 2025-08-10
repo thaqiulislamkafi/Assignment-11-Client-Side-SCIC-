@@ -15,7 +15,7 @@ const UpcomingEvent = () => {
     return (
         <div className='w-[85.94vw] mx-auto my-30'>
             <p className='text-3xl text-start poppins font-semibold mt-10'>Upcoming Events</p>
-            <p className='lg:text-lg text-start poppins text-gray-800 mt-3 mb-10 '>Discover the most exciting events happening soon in your town
+            <p className='lg:text-lg text-start poppins text-gray-800 mt-3 mb-10 dark:text-gray-200'>Discover the most exciting events happening soon in your town
             </p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
 

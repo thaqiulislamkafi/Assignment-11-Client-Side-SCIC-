@@ -9,7 +9,7 @@ const LeftSide = () => {
 
     const { user } = use(AuthContext)
 
-    const NavButton = 'px-4 py-3 hover:bg-gray-100  poppins flex gap-3';
+    const NavButton = 'px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 poppins flex gap-3';
 
     return (
         <div className='w-full'>
@@ -25,7 +25,7 @@ const LeftSide = () => {
             </div>
             <div className="divider"></div>
             <p className='text-sm p-3'>Pages</p>
-            <div className='dash-board w-full'>
+            <div className='dash-board w-full space-y-2'>
                 <NavLink className={NavButton} to={'myMarathons'}>
 
                     <div><MdOutlineEventRepeat size={20} /></div>

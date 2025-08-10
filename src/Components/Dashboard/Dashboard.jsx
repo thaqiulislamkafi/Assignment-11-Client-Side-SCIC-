@@ -23,8 +23,8 @@ const Dashboard = () => {
                 <title>Dashboard</title>
             </Helmet>
             
-            <div className='sora-font w-[85.94vw] mx-auto lg:grid lg:grid-cols-1 lg:grid-cols-12 gap-5 my-8 '>
-                <aside className='col-span-3 bg-gray-50 rounded-2xl h-fit  hidden lg:flex'>
+            <div className='sora-font w-[85.94vw] mx-auto lg:grid grid-cols-1 lg:grid-cols-12 gap-5 my-8 '>
+                <aside className='col-span-3 bg-gray-50 dark:bg-gray-900 dark:border dark:border-gray-700 rounded-2xl h-fit  hidden lg:flex'>
                     <LeftSide />
                 </aside>
 
@@ -37,7 +37,7 @@ const Dashboard = () => {
                     </ul>
                 </div>
 
-                <aside className='col-span-9 bg-gray-50 rounded-2xl overflow-x-auto'>
+                <aside className='col-span-9 bg-gray-50 rounded-2xl overflow-x-auto dark:bg-gray-900 dark:border dark:border-gray-700'>
                 {isNavigating && <Loading />}
                     <Outlet></Outlet>
                 </aside>

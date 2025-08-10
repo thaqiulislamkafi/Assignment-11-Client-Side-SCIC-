@@ -142,8 +142,8 @@ const Marathon = ({ index, ShowMarathon, marathons, setMarathons }) => {
                 </td>
             </tr>
 
-            <dialog id={marathon._id} className="modal">
-                <div className="modal-box lg:max-w-2/3">
+            <dialog id={marathon._id} className="modal dark:bg-gray-900">
+                <div className="modal-box lg:max-w-2/3 dark:bg-gray-900">
                     <div className="modal-action">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}

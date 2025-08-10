@@ -37,40 +37,40 @@ const UpdateApply = ({ marathon }) => {
 
                     <div className='flex flex-col gap-2 my-1'>
                         <label className="label">Marathon Title</label>
-                        <input type="text" className="input w-full rounded-3xl" name='name' value={marathon.name} placeholder="" />
+                        <input type="text" className="input dark:bg-gray-900 w-full rounded-3xl" name='name' value={marathon.name} placeholder="" />
                     </div>
 
                     <div className='flex flex-col gap-2 my-1'>
                         <label className="label">Start Date</label>
-                        <input type="text" className="input w-full rounded-3xl" name='event_start' placeholder="" value={marathon.event_start} />
+                        <input type="text" className="input dark:bg-gray-900 w-full rounded-3xl" name='event_start' placeholder="" value={marathon.event_start} />
                     </div>
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 w-full '>
                         <div className='flex flex-col gap-2 my-1'>
                             <label className="label">First Name</label>
-                            <input type="text" className="input w-full rounded-3xl" name='first_name' defaultValue={marathon.first_name} placeholder="First Name" />
+                            <input type="text" className="input dark:bg-gray-900 w-full rounded-3xl" name='first_name' defaultValue={marathon.first_name} placeholder="First Name" />
                         </div>
 
                         <div className='flex flex-col gap-2 my-1'>
                             <label className="label">Last Name</label>
-                            <input type="text" className="input w-full rounded-3xl" defaultValue={marathon.last_name} name='last_name' placeholder="Last Name" />
+                            <input type="text" className="input dark:bg-gray-900 w-full rounded-3xl" defaultValue={marathon.last_name} name='last_name' placeholder="Last Name" />
                         </div>
                     </div>
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 w-full'>
                         <div className='flex flex-col gap-2 my-1'>
                             <label className="label">Your Github Profile Link</label>
-                            <input type="text" className="input w-full rounded-3xl" name='git_link' defaultValue={marathon.git_link} placeholder="Github Profile Link" />
+                            <input type="text" className="input dark:bg-gray-900 w-full rounded-3xl" name='git_link' defaultValue={marathon.git_link} placeholder="Github Profile Link" />
                         </div>
 
                         <div className='flex flex-col gap-2 my-1'>
                             <label className="label">Your Contact</label>
-                            <input type="number" className="input w-full rounded-3xl" name='contact' defaultValue={marathon.contact} placeholder="Your Contact" />
+                            <input type="number" className="input w-full rounded-3xl dark:bg-gray-900" name='contact' defaultValue={marathon.contact} placeholder="Your Contact" />
                         </div>
 
                         <div className='flex flex-col gap-2 my-1 lg:col-span-2'>
                             <label className="label">Your Email</label>
-                            <input type="email" className="input w-full rounded-3xl" value={marathon.event_user} placeholder="Email" />
+                            <input type="email" className="input w-full rounded-3xl dark:bg-gray-900" value={marathon.event_user} placeholder="Email" />
                         </div>
 
 

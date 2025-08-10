@@ -91,5 +91,5 @@
 
 
 .dash-board .active{
-  @apply font-semibold bg-gray-100
+  @apply font-semibold bg-gray-100 dark:bg-gray-800
 }

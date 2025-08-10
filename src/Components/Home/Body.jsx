@@ -39,20 +39,23 @@ export const Event = ({ event }) => {
     return (
         <>
             <div className=''>
-                <div className=' shadow-sm p-5 flex flex-col gap-6 rounded-xl sora-font'>
+                <div className=' shadow-sm p-5 flex flex-col gap-6 rounded-xl sora-font dark:border dark:border-gray-700 '>
                     <div className='bg-gray-100 lg:p-4 rounded-xl w-full h-auto'><img className='rounded-xl h-48 w-full' src={event.thumbnail} alt="" /></div>
+
                     <div className='text-start'>
+
                         <div className='flex gap-3 font-medium'>
                             <p className='text-[#23BE0A] text-xs px-3 py-2 bg-[#22be0a1e] rounded-2xl'># Available </p>
                             <p className='text-[#176AE5] text-xs px-3 py-2 bg-[#1769e51c] rounded-2xl'># {event.category}</p>
                         </div>
+                        
                         <p className='font-bold my-2 text-xl'>{event.name}</p>
-                        <p className='text-gray-700 my-1 text-sm'>Location : {event.location}</p>
+                        <p className='text-gray-700 dark:text-gray-200 my-1 text-sm'>Location : {event.location}</p>
                         <div className='flex  items-center justify-between'>
-                            <p className='text-gray-700 my-1 text-sm font-medium'> Registration Start  : {event.start_date}</p>
+                            <p className='text-gray-700 dark:text-gray-200 my-1 text-sm font-medium'> Registration Start  : {event.start_date}</p>
                             {/* <p className='text-gray-700 my-1 text-sm font-medium'> Date : {event.date}</p> */}
                         </div>
-                        <p className='text-gray-700 my-1 text-sm '> Registration End : <span className='text-[#23BE0A] font-bold'>{event.deadline_date}</span></p>
+                        <p className='text-gray-700 dark:text-gray-200 my-1 text-sm '> Registration End : <span className='text-[#23BE0A] font-bold'>{event.deadline_date}</span></p>
                       
 
                         <div>
@@ -61,6 +64,7 @@ export const Event = ({ event }) => {
                             </Link>
                         </div>
                     </div>
+
                 </div>
             </div>
         </>

@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 const Home = () => {
 
-    const { loading } = use(AuthContext)
+    const { loading,darkMode } = use(AuthContext)
     const navigation = useNavigation() ;
     const isNavigating = Boolean(navigation.location);
 
@@ -16,7 +16,7 @@ const Home = () => {
     
 
     return (
-        <div>
+        <div className={` ${darkMode ? 'dark' : ''} dark:bg-gray-900 dark:text-gray-200`}>
             <Navbar></Navbar>
             {isNavigating && <Loading />}
             <Outlet></Outlet>

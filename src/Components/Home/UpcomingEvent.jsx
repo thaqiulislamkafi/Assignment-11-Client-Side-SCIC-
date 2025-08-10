@@ -34,7 +34,7 @@ const ComingEvent = ({ event }) => {
     return (
         <>
 
-            <div className=' shadow-sm p-5 flex flex-col gap-6 rounded-xl sora-font'>
+            <div className=' shadow-sm p-5 flex flex-col gap-6 rounded-xl sora-font dark:border dark:border-gray-700'>
                 <div className='bg-gray-100 lg:p-4 rounded-xl w-full h-auto'><img className='rounded-xl h-48 w-full' src={event.thumbnail} alt="" /></div>
                 <div className='text-start'>
                     <div className='flex gap-3 font-medium'>
@@ -44,10 +44,10 @@ const ComingEvent = ({ event }) => {
                     <p className='font-bold my-2 text-xl'>{event.name}</p>
                    
                     <div className='flex  items-center justify-between'>
-                        <p className='text-gray-700 my-1 text-sm font-medium'> Event Start  : {event.event_start}</p>
+                        <p className='text-gray-700 dark:text-gray-200 my-1 text-sm font-medium'> Event Start  : {event.event_start}</p>
                         {/* <p className='text-gray-700 my-1 text-sm font-medium'>Event Date : {event.event_start}</p> */}
                     </div>
-                    <p className='text-gray-700 my-1 text-sm '> Registration End : <span className='text-[#23BE0A] font-bold'>{event.deadline_date}</span></p>
+                    <p className='text-gray-700 dark:text-gray-200 my-1 text-sm '> Registration End : <span className='text-[#23BE0A] font-bold'>{event.deadline_date}</span></p>
                     <p className='text-sm'>Details: {event.details.split(' ').slice(0,8).join(' ')}..</p>
                     <div>
                         <Link to={`/eventdetails/${event._id}`}>

@@ -9,6 +9,7 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null) ;
     const [loading, setLoading] = useState(true);
+    const [darkMode,setDarkMode] = useState(false) ;
 
     useEffect(()=>{
 
@@ -31,7 +32,9 @@ const AuthProvider = ({ children }) => {
         user,
         setUser,
         loading,
-        setLoading
+        setLoading,
+        darkMode,
+        setDarkMode
     }
 
     return <AuthContext value={AuthData}>{children}</AuthContext>

@@ -30,7 +30,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className=' shadow-sm'>
+        <div className='shadow-sm z-50 bg-white/30 dark:bg-gray-900/30 lg:sticky lg:top-0 backdrop-blur-lg '>
             <div className="navbar Navbar-three-colomn sora-font w-[85.94vw] mx-auto ">
                 <div className="flex ">
                     <div className="lg:hidden  ">

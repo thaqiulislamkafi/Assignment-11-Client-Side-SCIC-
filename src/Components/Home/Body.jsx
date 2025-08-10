@@ -190,11 +190,11 @@ const EventFAQSection = () => {
               className="input dark:bg-gray-900  w-full max-w-xs bg-white"
             />
             </div>
-            <div className="btn mt-3">
-              <button className="my-5 bg-accentcolor  text-sm py-2 px-7 rounded-lg ">
+            
+              <button className="btn btn-outline mt-3 rounded-lg ">
                 Send
               </button>
-            </div>
+         
           </div>
         </div>
       </section>
